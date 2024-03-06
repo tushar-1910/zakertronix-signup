@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# User Registration Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This project is a user registration application built using Node.js, Express, MongoDB, and React. It allows users to register either online or offline. Offline registration data is synchronized with the server when the user comes back online.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- User registration both online and offline.
+- Synchronization of offline registration data with the server when the user comes online.
+- Password encryption using bcrypt.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Create a `.env` file in the root directory and provide the following environment variables:
 
-### `npm test`
+5. Start the server using `npm start`.
+6. Access the application in your browser at `http://localhost:5590`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Backend Setup
 
-### `npm run build`
+- The backend is built using Node.js and Express.
+- MongoDB is used as the database.
+- CORS allowing browser should permit loading resources
+- Install the required dependencies using `npm install`.
+- Run the server using `npm start`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Frontend Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The frontend is built using React.
+- Navigate to the `client` directory.
+- Install the required dependencies using `npm install`.
+- Start the development server using `npm start`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Backend API Endpoints
 
-### `npm run eject`
+- **POST /register**: Register a new user.
+- **POST /syncOfflineData**: Synchronize offline registration data with the server.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
+- Express.js
+- MongoDB
+- React
+- Bcrypt
+- Axios
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Access the application in your browser.
+2. Fill out the registration form with the required details.
+3. Click the "Register" button to register online.
+4. If offline, the registration data will be saved locally.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Screenshot of User  Online Registration Application]()
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. When online again, the saved offline data will be synchronized with the server automatically.
 
-### Code Splitting
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot of User  Offline Registration Application]()
 
-### Analyzing the Bundle Size
+## Deployed link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[link]()
 
-### Making a Progressive Web App
+#### Cloud Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- vercel
+  used vercel for deploying frontend and backend
